@@ -1,0 +1,308 @@
+/* DESKTOP FIRST */
+/* SECTION */
+
+.section-container-competences {
+    /* margin-top: 200px; */
+    height: 100vh;
+    background-color: var(--main-color-white);
+}
+
+.comptences-bloc-left {
+    height: 100vh;
+    background-color: var(--main-color);
+}
+
+.comptences-bloc-left img {
+    width: 500px;
+}
+
+
+
+.comptetence-bloc-right .competence-bloc-right-title h4 {
+    /* font-family: 'Asap', sans-serif; */
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Playpen Sans', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.competence-liste-main {
+    width: 500px;
+    height: 30px;
+    background-color: var(--main-color-third);
+    border: 1px ridge var(--main-color-black);
+    border-radius: 20px;
+    position: relative;
+    z-index: var(--z-index-front);
+}
+
+/* animation de la bar du niveau de competence */
+/* barre de progression html avec un longeur de 98% <=> width 340px */
+.competence-bloc-right-content div:nth-child(1) .progressionbar {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    background-color: var(--main-color-orangeee);
+    border-radius: 0 20px 20px 0;
+    width: 340px;
+    height: 30px;
+    animation: completefull 5s linear 300ms forwards;
+    z-index: var(--z-index-999);
+
+}
+
+/* end barre de progression html */
+
+/* barre de progression css avec un longeur de 98% <=> width 340px */
+.competence-bloc-right-content div:nth-child(2) .progressionbar {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    background-color: var(--main-color-blue);
+    border-radius: 0 20px 20px 0;
+    width: 340px;
+    height: 30px;
+    animation: completefull 5s linear 100ms forwards;
+    z-index: var(--z-index-999);
+
+}
+
+/* end barre de progression css */
+
+/* barre de progression js avec un longeur de 0% <=> width 0px */
+.competence-bloc-right-content div:nth-child(3) .progressionbar {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    background-color: var(--main-color);
+    border-radius: 0 20px 20px 0;
+    width: 0px;
+    height: 30px;
+    animation: completefull 5s linear 200ms forwards;
+    z-index: var(--z-index-999);
+}
+
+/* end barre de progression js */
+
+/* barre de progression php avec un longeur de 0% <=> width 0px */
+.competence-bloc-right-content div:nth-child(4) .progressionbar {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    background-color: var(--main-color);
+    border-radius: 0 20px 20px 0;
+    width: 0px;
+    height: 30px;
+    animation: completefull 5s linear 200ms forwards;
+    z-index: var(--z-index-999);
+}
+
+/* end barre de progression php */
+
+/* barre de progression mysql avec un longeur de 0% <=> width 0px */
+.competence-bloc-right-content div:nth-child(5) .progressionbar {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    background-color: var(--main-color);
+    border-radius: 0 20px 20px 0;
+    width: 0px;
+    height: 30px;
+    animation: completefull 5s linear 200ms forwards;
+    z-index: var(--z-index-999);
+}
+
+/* end barre de progression mysql */
+
+/* barre de progression wordpress avec un longeur de 0% <=> width 00px */
+.competence-bloc-right-content div:nth-child(6) .progressionbar {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    background-color: var(--main-color);
+    border-radius: 0 20px 20px 0;
+    width: 0px;
+    height: 30px;
+    animation: completefull 5s linear 200ms forwards;
+    z-index: var(--z-index-999);
+}
+
+/* end barre de progression wordpress */
+/* ceux de bootstrap et autres seront precisé au fur et à mesrue de la formation */
+
+/* barre de progression photoshop avec un longeur de 60% <=> width 160px */
+.competence-bloc-right-content div:nth-child(11) .progressionbar {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    background-color: var(--main-color);
+    border-radius: 0 20px 20px 0;
+    width: 160px;
+    height: 30px;
+    animation: completefull 5s linear 200ms forwards;
+    z-index: var(--z-index-999);
+}
+
+.competence-liste-inside {
+    position: absolute;
+    background-color: var(--main-color);
+    border-radius: 20px 0 0 20px;
+    width: 150px;
+    z-index: var(--z-index-bande);
+}
+
+@keyframes completefull {
+    from {
+        margin-left: 10px;
+    }
+
+    to {
+        margin-left: 140px;
+    }
+}
+
+.competence-liste-inside img {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.competence-liste-inside {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.competence-name {
+    text-transform: uppercase;
+    /* font-weight: bold; */
+    /* font-family: 'Asap', sans-serif; */
+    /* font-family: 'Dancing Script', cursive; */
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Playpen Sans', cursive; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* END SECTION */
+
+/* END DESKTOP FIRST */
+
+/* MEDIA */
+@media screen and (max-width: 1350px) {}
+
+@media screen and (max-width: 1032px) {
+    .comptences-bloc-left {
+        height: auto;
+    }
+
+    .section-container-competences {
+        /* margin-top: 200px; */
+        height: 150vh;
+    }
+}
+
+@media screen and (max-width: 900px) {}
+
+
+@media screen and (max-width: 731px) {
+    .section-container-competences {
+        margin-top: 200px;
+        /* height: 90vh; */
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .section-container-competences {
+        margin-top: 200px;
+        height: 90vh;
+    }
+
+    .comptences-bloc-left img {
+        width: 275px;
+    }
+
+    .comptetence-bloc-right .competence-bloc-right-title h4 {
+        font-size: 1.5rem;
+    }
+
+    .competence-liste-main {
+        width: 275px;
+        height: 30px;
+        border-radius: 20px;
+    }
+
+    /* animation de la bar du niveau de competence */
+    /* barre de progression html avec un longeur de 98% <=> width 115px */
+    .competence-bloc-right-content div:nth-child(1) .progressionbar {
+        width: 115px;
+    }
+
+    /* end barre de progression html */
+
+    /* barre de progression css avec un longeur de 98% <=> width 115px */
+    .competence-bloc-right-content div:nth-child(2) .progressionbar {
+        width: 115px;
+    }
+
+    /* end barre de progression css */
+
+    /* barre de progression js avec un longeur de 0% <=> width 0px */
+    .competence-bloc-right-content div:nth-child(3) .progressionbar {
+        width: 0px;
+    }
+
+    /* end barre de progression js */
+
+    /* barre de progression php avec un longeur de 0% <=> width 0px */
+    .competence-bloc-right-content div:nth-child(4) .progressionbar {
+        width: 0px;
+    }
+
+    /* end barre de progression php */
+
+    /* barre de progression mysql avec un longeur de 0% <=> width 0px */
+    .competence-bloc-right-content div:nth-child(5) .progressionbar {
+        width: 0px;
+    }
+
+    /* end barre de progression mysql */
+
+    /* barre de progression wordpress avec un longeur de 0% <=> width 00px */
+    .competence-bloc-right-content div:nth-child(6) .progressionbar {
+        width: 0px;
+    }
+
+    /* end barre de progression wordpress */
+    /* ceux de bootstrap et autres seront precisé au fur et à mesrue de la formation */
+
+    /* barre de progression photoshop avec un longeur de 60% <=> width 80px */
+    .competence-bloc-right-content div:nth-child(11) .progressionbar {
+        width: 50px;
+    }
+
+    .competence-liste-inside {
+        position: absolute;
+        background-color: var(--main-color);
+        border-radius: 20px 0 0 20px;
+        width: 150px;
+        z-index: var(--z-index-bande);
+    }
+
+
+}
+
+@media screen and (max-width: 560px) {
+    .section-container-competences {
+        margin-top: 200px;
+        height: 60vh;
+    }
+}
+
+/* END MEDIA */

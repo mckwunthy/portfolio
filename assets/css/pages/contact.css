@@ -1,0 +1,123 @@
+/* DESKTOP  */
+.section-container-contact {
+    background-color: var(--main-color);
+    padding-bottom: 20px;
+}
+
+.section-container-contact-title {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: 'Asap', sans-serif;
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Playpen Sans', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+    padding: 10px;
+    text-align: center;
+}
+
+.divider-contact {
+    width: 50px;
+    height: 5px;
+    background-color: var(--main-color-red);
+}
+
+.image-illustration {
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.image-illustration .fa-envelope-open-text {
+    margin-bottom: 20px;
+    animation: tourY 2s linear infinite forwards;
+}
+
+@keyframes tourY {
+    from {
+        transform: rotateY(0);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    text-align: center;
+    gap: 20px;
+}
+
+form input,
+form button {
+    height: 45px;
+}
+
+form input,
+form textarea {
+    outline: none;
+    border: 1px solid var(--main-color-blue);
+    padding-left: 10px;
+    color: var(--main-color);
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: none;
+}
+
+form button {
+    background-color: var(--main-color-second);
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    border: 1px solid var(--main-color-blue);
+}
+
+/* DESKTOP  */
+
+/* MEDIA */
+@media screen and (max-width: 1350px) {}
+
+@media screen and (max-width: 1100px) {}
+
+@media screen and (max-width: 900px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 560px) {
+    .section-container-contact {
+        margin-bottom: -310px;
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 394px) {
+    .image-illustration {
+        font-size: 2rem;
+    }
+
+    form input,
+    form button {
+        height: 25px;
+        width: 250px;
+    }
+
+    form textarea {
+        resize: none;
+        width: 250px;
+    }
+
+    form button {
+        background-color: var(--main-color-second);
+        font-size: 1.1rem;
+        text-transform: capitalize;
+        font-weight: bold;
+        border: 1px solid var(--main-color-blue);
+    }
+}
+
+/* END MEDIA */

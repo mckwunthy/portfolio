@@ -1,0 +1,465 @@
+/* DESKTOP FIRST */
+/* header */
+header {
+    background-color: var(--main-color-white);
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    padding-bottom: 10px;
+    box-shadow: 1px 1px 10px var(--main-color-gray);
+    z-index: var(--z-index-bande);
+}
+
+.header-container .bar-kamtl-slogan .kamtl-slogan .slogan-second {
+    display: none;
+}
+
+/* .bar-kamtl-slogan */
+.bar-kamtl-slogan .bar {
+    width: 10px;
+    height: 65px;
+    animation: shine 3s linear infinite forwards;
+    /* color: var(--main-color); */
+    background-color: var(--main-color-red);
+    margin-top: 21px;
+    margin-right: 2px;
+}
+
+
+@keyframes shine {
+
+    0%,
+    10% {
+        opacity: 1;
+        /* margin-left: -50px; */
+    }
+
+    11%,
+    20% {
+        opacity: 1;
+        /* margin-left: 20px; */
+    }
+
+    21%,
+    30% {
+        opacity: 0.1;
+    }
+
+    31%,
+    40% {
+        opacity: 0.2;
+    }
+
+    41%,
+    50% {
+        opacity: 0.3;
+    }
+
+    51%,
+    60% {
+        opacity: 0.4;
+    }
+
+    61%,
+    70% {
+        opacity: 0.5;
+    }
+
+    71%,
+    80% {
+        opacity: 0.6;
+    }
+
+    81%,
+    90% {
+        opacity: 0.7;
+    }
+
+    91%,
+    100% {
+        opacity: 1;
+    }
+}
+
+.kamtl-slogan .kamtl {
+    font-family: 'Asap', sans-serif;
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Playpen Sans', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 3.5rem;
+    margin-bottom: -14px;
+}
+
+.kamtl-slogan .slogan {
+    font-family: 'Asap', sans-serif;
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Playpen Sans', cursive; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.05rem;
+    margin-left: 2px;
+    color: var(--main-color-gray);
+}
+
+/* end bar-kamtl-slogan */
+
+/* nav */
+
+
+nav ul {
+    text-transform: capitalize;
+    font-family: 'Asap', sans-serif;
+    /* font-family: 'Dancing Script', cursive; */
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Playpen Sans', cursive; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+nav ul li {
+    border: 1px solid var(--main-color-white);
+}
+
+nav ul li:hover {
+    border-bottom: 1px solid var(--main-color-gray);
+}
+
+/* end nav */
+/* end header */
+/* SECTION */
+/* le margin-top de section va augmenter sur les petit media */
+section {
+    margin-top: 120px;
+}
+
+/* section back */
+.section-back .section-back-left {
+    background-color: var(--main-color);
+    height: 80vh;
+    flex-grow: 3;
+}
+
+.section-back .section-back-right {
+    background-color: var(--main-color-white);
+    height: 80vh;
+    flex-grow: 4;
+}
+
+/* end section back */
+
+/* section front */
+.section-front {
+    position: absolute;
+    top: 5%;
+    left: 25%;
+}
+
+/* front left */
+.section-front .front-left {
+    width: 300px;
+    height: 70vh;
+    background-color: var(--main-color);
+    box-shadow: 1px 1px 5px var(--main-color-black);
+}
+
+.section-front .front-left .front-left-main {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.section-front .front-left .front-left-main .front-left-main-profil img {
+    width: 200px;
+    height: 200px;
+    border-radius: 500px;
+    border: 2px ridge var(--main-color-black);
+}
+
+.section-front .front-left .front-left-main .front-left-main-name {
+    text-transform: capitalize;
+    /* font-family: 'Asap', sans-serif; */
+    /* font-family: 'Dancing Script', cursive; */
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Playpen Sans', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.section-front .front-left .front-left-main .front-left-main-name p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.section-front .front-left .front-left-main .divider {
+    border: 1px solid var(--main-color-red);
+    width: 50%;
+    height: 1px;
+    background-color: var(--main-color-red);
+    margin: 15px auto;
+}
+
+.section-front .front-left .front-left-main .front-left-main-profession {
+    /* font-family: 'Asap', sans-serif; */
+    /* font-family: 'Dancing Script', cursive; */
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Playpen Sans', cursive; */
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.section-front .front-left .front-left-bottom {
+    background-color: var(--main-color-white);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 2rem;
+    padding: 5px;
+}
+
+/* end front left */
+
+/* front right */
+.section-front .front-right {
+    width: 300px;
+    height: 70vh;
+    text-align: center;
+}
+
+.section-front .front-right .front-right-salut {
+    /* font-family: 'Asap', sans-serif; */
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Playpen Sans', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 5rem;
+
+}
+
+.section-front .front-right .front-right-qui-je-suis {
+    /* font-family: 'Asap', sans-serif; */
+    /* font-family: 'Dancing Script', cursive; */
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Playpen Sans', cursive; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.section-front .front-right .front-right-qui-je-suis::first-letter {
+    text-transform: capitalize;
+}
+
+.section-front .front-right .front-right-button a {
+    background-color: var(--main-color);
+    width: 80px;
+    padding: 5px;
+    font-family: 'Asap', sans-serif;
+    /* font-family: 'Dancing Script', cursive; */
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Playpen Sans', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 25px;
+    text-transform: capitalize;
+}
+
+.section-front .front-right .front-right-description {
+    /* font-family: 'Asap', sans-serif; */
+    /* font-family: 'Dancing Script', cursive; */
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'Playpen Sans', cursive;
+    /* font-family: 'Roboto', sans-serif; */
+    text-align: justify;
+    padding: 5px;
+}
+
+.section-front .front-right .front-right-description::first-letter {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+/*end front right */
+
+/* end section front */
+
+/* end SECTION */
+/* FOOTER */
+.footer-container {
+    height: 10vh;
+    /* background-color: var(--main-color); */
+    box-shadow: 1px 1px 10px var(--main-color-black);
+    margin-top: 5vh;
+}
+
+.copyright {
+    /* font-family: 'Asap', sans-serif; */
+    /* font-family: 'Dancing Script', cursive; */
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Playpen Sans', cursive; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+/* END FOOTER */
+/* END DESKTOP FIRST */
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1350px) {}
+
+@media screen and (max-width: 1100px) {}
+
+@media screen and (max-width: 840px) {
+
+    /* reduction de la marge gauche  */
+    .section-front {
+        /* top: 5%; */
+        left: 10%;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+
+    /* reduction de la marge gauche  */
+    .section-front {
+        /* top: 5%; */
+        left: 2%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .section-front {
+        gap: 2vw;
+    }
+
+    .section-front .front-right {
+        width: 230px;
+    }
+
+    .section-front .front-right .front-right-description {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .section-front {
+        top: 10%;
+        left: 20%;
+    }
+
+    .section-front .front-right .front-right-description {
+        font-size: 1rem;
+    }
+
+    .footer-container {
+        margin-top: 72vh;
+        box-shadow: 1px 1px 10px var(--main-color-black);
+    }
+}
+
+@media screen and (max-width: 404px) {
+    .section-front {
+        top: 10%;
+        left: 8vw;
+    }
+
+    .section-front .front-right {
+        margin: 0 auto;
+    }
+
+    /* menu nav */
+    header .header-container nav {
+        display: flex;
+
+    }
+
+    header .header-container nav ul {
+        display: none;
+    }
+
+    header .header-container div.menu {
+        display: block;
+        font-size: 3rem;
+        margin-top: 8px;
+        margin-right: 10px;
+    }
+
+    header .header-container div.menu:hover+nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        margin-right: 105px;
+        top: 90px;
+        width: 145px;
+        padding: 5px 0;
+        z-index: var(--z-index-bande);
+        background-color: var(--main-color-white);
+        animation: moveIn 2s linear forwards;
+    }
+
+    @keyframes moveIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+
+    }
+
+    .header-container .bar-kamtl-slogan .kamtl-slogan .kamtl,
+    .header-container .bar-kamtl-slogan .kamtl-slogan .slogan {
+        display: none;
+    }
+
+    .header-container .bar-kamtl-slogan .kamtl-slogan .slogan-second {
+        display: block;
+        position: absolute;
+        top: 70px;
+        width: 200px;
+        /* left: -100px; */
+    }
+
+    .header-container .bar-kamtl-slogan {
+        margin-left: 0px;
+    }
+
+    .header-container .bar-kamtl-slogan .kamtl-slogan::before {
+        content: "KamAAC";
+        font-size: 3.5rem;
+        /* font-family: 'Asap', sans-serif; */
+        /* font-family: 'Dancing Script', cursive; */
+        font-family: 'Oswald', sans-serif;
+        /* font-family: 'Playpen Sans', cursive; */
+        /* font-family: 'Roboto', sans-serif; */
+    }
+
+    .footer-container {
+        margin-top: 72vh;
+    }
+}
+
+@media screen and (max-width: 282px) {
+    .section-front {
+        top: 10%;
+        left: 8vw;
+    }
+
+    .section-front .front-left {
+        width: 250px;
+        margin-left: -5px;
+    }
+
+    .footer-container .social-network {
+        gap: 20px;
+    }
+}
+
+/* END MEDIA QUERY */

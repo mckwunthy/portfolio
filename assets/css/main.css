@@ -1,0 +1,17 @@
+/* lien google font */
+@import url(https://fonts.googleapis.com/css2?family=Asap:wght@100&family=Dancing+Script&family=Oswald:wght@500&family=Playpen+Sans:wght@300&family=Roboto:wght@100&display=swap);
+
+/* lien cdn de fontawesone */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+
+/* insertion de notre framework */
+@import url(/assets/css/MyFramework/framework.css);
+@import url(/assets/css/MyFramework/color.css);
+@import url(/assets/css/MyFramework/z-index.css);
+
+/* insertion feuille style des pages */
+@import url(/assets/css/pages/index.css);
+@import url(/assets/css/pages/portfolio.css);
+@import url(/assets/css/pages/apropos.css);
+@import url(/assets/css/pages/competences.css);
+@import url(/assets/css/pages/contact.css);
